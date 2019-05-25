@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setvalue">
+
+    <EditText
+        android:id="@+id/Trynumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="50dp"
+        android:hint="Enter number of chances to be allowed"
+        android:inputType="number"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/chanceentry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Trynumber"
+        android:layout_marginLeft="165dp"
+        android:layout_marginTop="20dp"
+        android:text="Enter" />
+
+
+    <EditText
+        android:id="@+id/setanswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chanceentry"
+        android:layout_marginLeft="98dp"
+        android:layout_marginTop="150dp"
+        android:hint="Enter answer to be set"
+        android:inputType="number"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/forsettinganswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setanswer"
+        android:layout_marginLeft="165dp"
+        android:layout_marginTop="20dp"
+        android:text="Enter"
+        android:textSize="25sp" />
+
+</RelativeLayout>
