@@ -55,7 +55,21 @@ public class Death extends AppCompatActivity {
             };
 
         });
+
+        if(savedInstanceState!=null)
+        {
+            clickcount=savedInstanceState.getInt("clickcount");
+        }
+
     }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        savedInstanceState.putInt("clickcount",clickcount);
+    }
+
 
     @Override
     public void onBackPressed()
